@@ -1,0 +1,28 @@
+# System files
+.DS_Store
+Thumbs.db
+
+# WordPress core files (optional if you're only versioning themes/plugins)
+/wp-admin/
+/wp-includes/
+
+# Local WP-specific folders
+/app/sql/
+/app/public/wp-config.php
+/app/public/wp-content/uploads/
+
+# Environment files
+.env
+
+# Logs
+error_log
+debug.log
+
+# Node/npm related (if you're using Tailwind or other tooling)
+node_modules/
+dist/
+
+# IDE/editor configs
+.vscode/
+*.sublime-project
+*.sublime-workspace

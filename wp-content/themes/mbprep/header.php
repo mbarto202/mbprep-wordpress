@@ -21,7 +21,6 @@
         <li><a href="<?php echo home_url(); ?>">Home</a></li>
         <li><a href="<?php echo home_url('/about-me'); ?>">About</a></li>
         <li><a href="<?php echo home_url('/progress'); ?>">Progress</a></li>
-		<li><a href="<?php echo home_url('/contact'); ?>">Contact</a></li>
       </ul>
     </nav>
   </header>

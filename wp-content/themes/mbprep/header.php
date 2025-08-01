@@ -14,7 +14,7 @@
 <body <?php body_class(); ?>>
   <header>
     <div class="logo">
-      <a href="<?php echo home_url(); ?>">MBPrep</a>
+      <h1>MBPrep</h1>
     </div>
     <nav>
       <ul>

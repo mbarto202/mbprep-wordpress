@@ -2,8 +2,11 @@
 
 <main>
   <section class="hero">
-    <h1>Welcome to MBPrep</h1>
-    <p>Follow my bodybuilding prep.</p>
+    <div class="hero-content">
+      <h1>Welcome to MBPrep</h1>
+      <p>Follow my natural bodybuilding prep journey — weekly progress updates, photos, and training insights.</p>
+      <a href="/progress" class="btn-primary">View Progress</a>
+    </div>
   </section>
 
   <section class="latest-updates">
@@ -16,7 +19,7 @@
 
     if ($progress_posts->have_posts()) :
       while ($progress_posts->have_posts()) : $progress_posts->the_post(); ?>
-        <article>
+        <article class="update-card">
           <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
           <p><?php the_excerpt(); ?></p>
         </article>

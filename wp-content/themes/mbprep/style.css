@@ -33,28 +33,31 @@ header {
 .logo a {
   margin: 0;
   font-size: 1.5rem;
-  color: #111;
   text-decoration: none;
+  color: #990000;
 }
 
 /* Navigation */
 nav ul {
   list-style: none;
   display: flex;
-  gap: 1.5rem;
+  gap: 2rem;
   margin: 0;
   padding: 0;
+  align-items: center;
 }
 
 nav a {
   text-decoration: none;
-  color: #000000;
-  font-weight: 500;
-  transition: color 0.3s ease;
+  font-size: 1rem;
+  color: #222;
+  padding: 0.5rem;
+  border-radius: 4px;
 }
 
 nav a:hover {
-  color: #7d0000;
+  background-color: #f1f1f1;
+  color: #990000;
 }
 
 /* Main Content */

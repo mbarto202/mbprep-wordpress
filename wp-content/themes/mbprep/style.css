@@ -185,3 +185,184 @@ a:hover {
 .update-card a:hover {
   text-decoration: underline;
 }
+
+/* ===== Header / Nav ===== */
+header {
+  background: #fff;
+  border-bottom: 1px solid #e6e6e6;
+  padding: 14px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.logo h1 {
+  margin: 0;
+  font-size: 1.75rem;
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: 0.2px;
+  color: #990000;
+}
+
+nav ul {
+  display: flex;
+  gap: 1.25rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav a {
+  display: inline-block;
+  padding: 0.5rem 0.75rem;
+  border-radius: 6px;
+  text-decoration: none;
+  color: #222;
+  font-weight: 600;
+  transition: background 0.2s ease, color 0.2s ease, transform 0.08s ease;
+}
+
+nav a:hover {
+  background: #f4f4f4;
+  color: #990000;
+}
+
+nav a:active {
+  transform: translateY(1px);
+}
+
+/* ===== Page shell ===== */
+main {
+  max-width: 960px;
+  margin: 32px auto;
+  padding: 0 16px 24px;
+  background: #fff;
+  border: 1px solid #eee;
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+/* ===== Hero ===== */
+.hero {
+  background: linear-gradient(135deg, #1a1a1a 0%, #990000 100%);
+  color: #fff;
+  border-radius: 12px 12px 0 0;
+  margin: -1px -1px 28px -1px; /* bleed to the card edges */
+  padding: 56px 20px;
+  text-align: center;
+}
+
+.hero .hero-content h1 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2.25rem;
+  letter-spacing: 0.3px;
+}
+
+.hero .hero-content p {
+  margin: 0 0 1.25rem 0;
+  font-size: 1.125rem;
+  opacity: 0.95;
+}
+
+.btn-primary {
+  background: #ff4c4c;
+  color: #fff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 8px;
+  font-weight: 800;
+  text-decoration: none;
+  display: inline-block;
+  transition: background 0.2s ease, transform 0.08s ease, box-shadow 0.2s ease;
+  box-shadow: 0 6px 18px rgba(255, 76, 76, 0.25);
+}
+.btn-primary:hover {
+  background: #d90f0f;
+}
+.btn-primary:active {
+  transform: translateY(1px);
+}
+
+/* ===== Latest Updates ===== */
+.latest-updates {
+  padding: 8px 10px 20px;
+}
+
+.latest-updates h2 {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 8px 0 18px;
+  color: #222;
+}
+
+.update-card {
+  border: 1px solid #eee;
+  border-radius: 10px;
+  padding: 16px;
+  margin: 0 0 14px 0;
+  transition: box-shadow 0.2s ease, transform 0.08s ease, border-color 0.2s ease;
+}
+.update-card:hover {
+  border-color: #e6e6e6;
+  box-shadow: 0 8px 22px rgba(0, 0, 0, 0.06);
+  transform: translateY(-1px);
+}
+
+.update-card h3 {
+  margin: 0 0 0.35rem 0;
+  font-size: 1.1rem;
+}
+.update-card h3 a {
+  color: #990000;
+  text-decoration: none;
+}
+.update-card h3 a:hover {
+  text-decoration: underline;
+}
+
+.update-card p {
+  margin: 0.25rem 0 0 0;
+  color: #444;
+}
+
+/* ===== Footer ===== */
+footer {
+  text-align: center;
+  padding: 18px 12px;
+  margin: 24px auto 0;
+  font-size: 0.9rem;
+  color: #666;
+  background: #fafafa;
+  border-top: 1px solid #eee;
+  border-radius: 0 0 12px 12px;
+  max-width: 960px;
+}
+
+/* ===== Utilities / Responsive ===== */
+@media (max-width: 768px) {
+  header {
+    padding: 12px 16px;
+  }
+  .logo h1 {
+    font-size: 1.4rem;
+  }
+  nav ul {
+    gap: 0.75rem;
+  }
+  nav a {
+    padding: 0.45rem 0.6rem;
+  }
+  .hero {
+    padding: 44px 16px;
+  }
+  .hero .hero-content h1 {
+    font-size: 1.9rem;
+  }
+  main {
+    margin: 20px 12px;
+    padding: 0 12px 18px;
+  }
+}
